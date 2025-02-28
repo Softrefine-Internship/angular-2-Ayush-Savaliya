@@ -1,0 +1,14 @@
+<div class="color-box">
+  <div #colorDiv class="color-box--Text-box" >
+    Hello World...!
+  </div>
+
+  <div class="color-box--ipbox" >
+    <label>Text Color : </label>
+    <input type="color" [(ngModel)]="textColor" (input)="updateColors()" placeholder="TextColor"/>
+  </div>
+  <div class="color-box--ipbox" >
+    <label>Background Color : </label>
+    <input type="color" [(ngModel)]="bgColor" (input)="updateColors()" placeholder="bgColor"/>
+  </div>
+</div>
